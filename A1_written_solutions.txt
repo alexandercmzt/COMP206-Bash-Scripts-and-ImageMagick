@@ -1,0 +1,37 @@
+1a) After running cat on answer.txt, it said permission denied. I then tried sudo cat to make sure the file wasn’t corrupted or the permissions were bugged, and the text in the file was displayed. I then tried ls -l on the directory Problem1 which showed that the text file had 0 for permissions on read write and execute for all users, explaining the problem.
+
+
+1b) I used: 
+chmod 777 ans*
+ls -l
+Which displayed
+-rwxrwxrwx@ 1 Alexander  staff  139 Sep 22 10:45 answer.txt
+And then cat ans*
+Which displayed:
+This file contains a message with the answer to part 1. The message is:
+
+"Look what I learned in 206!"
+
+Congratulations if you read this.
+
+Indicating that I had successfully changed the permissions on answer.txt so that all users could read write and execute it.
+
+
+2a)
+UID: Process Owner’s User ID
+PID: Process ID
+PPID: Parent process ID
+F: Flags
+CPU: How much CPU its using
+PRI: Priority
+NI: Nice value
+SZ: Virtual memory usage
+RSS: Real memory usage
+WCHAN: Memory address of event process is waiting for
+S: Status code
+ADDR: Memory address
+TTY: Associated terminal
+TIME: Total CPU usage
+CMD: Name of process including arguments
+
+
